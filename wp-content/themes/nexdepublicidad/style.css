@@ -14,7 +14,22 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-main {
-    max-height: calc(100% - 112px);
-    overflow-y: auto;
+
+header, footer {
+    z-index: 1080;
+}
+.vcenter {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-section {
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background: url(assets/img/nex-background@2x.png) no-repeat top center;
+    background-size: cover;
+    background-color: grey;
 }
